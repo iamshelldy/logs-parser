@@ -1,0 +1,24 @@
+{
+  "handlers": {
+    "log_formats": [
+      "<date> <time> <levelname> django.request: <method> <handler> <status_code> <status> [<ip>]",
+      "<date> <time> <levelname> django.request: <error>: <handler> [<ip>] - <description>"
+    ],
+    "filters": {
+    },
+    "x_axis": "levelname",
+    "y_axis": "handler",
+    "total": "requests"
+  },
+  "ips": {
+    "log_formats": [
+      "<date> <time> <levelname> <name>: <method> <endpoint> <status_code> <status> [<ip>]",
+      "<date> <time> <levelname> <name>: <error>: <endpoint> [<ip>] - <description>"
+    ],
+    "filters": {
+    },
+    "x_axis": "endpoint",
+    "y_axis": "ip",
+    "total": "requests"
+  }
+}
