@@ -26,7 +26,7 @@ CLI-приложение для анализа логов и генерации 
 
 ```bash
 git clone https://github.com/iamshelldy/logs-parser.git
-cd tron-fastapi-service
+cd logs-parser
 ```
 
 Выполните из корня проекта следующие команды:\
