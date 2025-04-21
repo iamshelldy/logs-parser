@@ -11,8 +11,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Logs Parser")
 
     parser.add_argument("files", nargs="+", help="input file names")
-    parser.add_argument("-r", "--report", metavar="REPORT NAME", help="name of the report")
-    parser.add_argument("-o", "--output", metavar="OUTPUT FILE NAME", help="name of the report")
+    parser.add_argument("-r", "--report", metavar="REPORT_NAME", help="name of the report")
+    parser.add_argument("-o", "--output", metavar="OUTPUT_FILE", help="name of the output report file")
 
     args = parser.parse_args()
     missing_files = [f for f in args.files if not os.path.exists(f)]

@@ -41,7 +41,15 @@ pip install -r requirements.txt
 ```
 Запустите приложение:
 ```bash
+python main.py samples\app1.log samples\app2.log samples\app3.log --report handlers
+```
+или для краткости
+```bash
 python main.py samples\app1.log samples\app2.log samples\app3.log -r handlers
+```
+Также вы можете вывести отчет в файл, указав имя файла через ключ `--output` или `-o`:
+```bash
+python main.py samples\app1.log samples\app2.log samples\app3.log -r handlers -o out.txt
 ```
 
 ## Конфигурация приложения
